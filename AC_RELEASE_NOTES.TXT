@@ -1,0 +1,136 @@
+
+
+*******************************************************************
+*
+* VERS   :  02.02b
+* Date   :  03.07.2010 15:35
+* Status :  Test
+* File:  AC_FW_M128_SW02.2b_201007021535.hex
+*        AC_FW_M128_SW02.2b_201007021535.eep
+*
+*************************************************
+*
+* Changes: - Signaldauer des internen Buzzers beim Oeffnen und
+*            und Schliessen der Tueren und Fenster einstellbar
+*            von 0s = Aus bis 25s in 1/10s-Schritten.
+*            Parameter mit Cmd 00102 = CMD_AC_Buzz1_Cnt_Time.
+*          - Routine zum Start von Systembefehlen integriert
+*              + NOP
+*              + Reload Data from EEPROM
+*              + Start des Internen Buzzers
+*
+* Error:   - 
+*
+*
+*------------------------------------------------------------------
+
+
+
+*******************************************************************
+*
+* VERS   :  02.02a
+* Date   :  21.06.2010 20:00
+* Status :  Test
+* File:  AC_FW_M128_SW02.2a_201006212040.hex
+*        AC_FW_M128_SW02.2a_201006212040.eep
+*
+*************************************************
+*
+* Changes: - Funktion zum Entprellen der Türsensoren während einer
+*            scharfen Anlage. Der Sensorwert muß jetzt 10 mal anliegen
+*            bis ein Alarm ausgelöst wird.
+*          - Alle Strings in KOnstanten ausgelagert
+*
+*
+* Error:   - Seltene Fehlalarme
+*
+*
+*------------------------------------------------------------------
+
+###INFO###
+* Messungen:
+* Durchlaeufe Mainloop ohne Initialisierung der Sensoren 435 bis 464/sec
+* Durchlaeufe Mainloop mit  Initialisierung der Sensoren 450 bis 477/sec
+* Durchlaeufe Mainloop mit  Init und scharf 450 bis 476/sec
+
+##########
+
+
+*******************************************************************
+*
+* VERS   :  02.01d 
+* Date   :  30.05.2009 18:30
+* Status :  Test
+* File:  AC_FW_M128_SW02.1d_200905302200.hex
+*        AC_FW_M128_SW02.1d_200905302200.eep
+*
+*************************************************
+*
+* Changes: - LCD: Anzeige des Countdown in die 4.Zeile verschoben  
+*          - LCD: Err-Msg in die 4.Zeile verschoben
+*          - LED: Grüne LED auf PD3 einegfügt; leuchtet wenn unscharf
+*
+*------------------------------------------------------------------
+
+
+*******************************************************************
+*
+* VERS   :  02.01c
+* Date   :  17.11.2008 18:30
+* Status :  Test
+* File:  AC_FW_M128_SW02.1c_200809072200.hex
+*        AC_FW_M128_SW02.1c_200809072200.eep
+*
+*************************************************
+*
+* Changes: - Temperaturabfrage (Klima-Modul)angepasst um das  
+*            Toggeln der Messung zu begrenzen.
+*
+*------------------------------------------------------------------
+
+*******************************************************************
+*
+* VERS   :  02.01b
+* Date   :  17.11.2008 18:30
+* Status :  Test
+* File:  AC_FW_M128_SW02.1b_200809071130.hex
+*        AC_FW_M128_SW02.1b_200809071130.eep
+*
+*************************************************
+*
+* Changes: - Anzeige der Versionsnr. "02.1b" in UART und LCD  
+*            Routine angepasst. KEINE FUNKTIONALEN AENDERUNGEN!
+*
+*------------------------------------------------------------------
+
+*******************************************************************
+*
+* VERS   :  02.01b
+* Date   :  07.09.2008 11:30
+* Status :  Test
+* File:  AC_FW_M128_SW02.1b_200809071130.hex
+*        AC_FW_M128_SW02.1b_200809071130.eep
+*
+*************************************************
+*
+* Changes: - Bei ausgelösten Alarm werden die aktivierten  
+*            Alarm-Ports in der Hauptroutine erneut aufgerufen.
+*
+*------------------------------------------------------------------
+
+*******************************************************************
+*
+* VERS   :  02.01a
+* Date   :  24.06.2008 12:00
+* Status :  Stable
+* File:  AC_FW_M128_SW02.1a_200806241200.hex
+*        AC_FW_M128_SW02.1a_200806241200.eep
+*
+*************************************************
+*
+* Changes: FIRST RELEASE
+*
+*
+*******************************************************************
+
+

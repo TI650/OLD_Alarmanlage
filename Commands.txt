@@ -1,0 +1,41 @@
+#define CMD_AC_CountdownTime             101
+
+#define CMD_AC_InPortAdr_Min             200
+#define CMD_AC_InPortAdr_Max             207
+#define CMD_AC_InPortCnt                 210
+
+#define CMD_AC_InPortRootingTable_Min    300
+#define CMD_AC_InPortRootingTable_Max    363
+
+
+#define CMD_RTC_SetWeekDay               501
+#define CMD_RTC_SetDay                   502
+#define CMD_RTC_SetMonth                 503
+#define CMD_RTC_SetYear                  504
+#define CMD_RTC_SetHour                  505
+#define CMD_RTC_SetMinute                506
+#define CMD_RTC_SetSecond                507
+
+#define CMD_PreAlarm_BuzzerLevelMin      611
+#define CMD_PreAlarm_BuzzerLevelMax      612
+#define CMD_PreAlarm_BuzzerIntervall     613
+
+#define CMD_FullAlarm_BuzzerLevelMin     621
+#define CMD_FullAlarm_BuzzerLevelMax     622
+#define CMD_FullAlarm_BuzzerIntervall    623
+
+
+#define CMD_SensorKorrWert_TA           1111
+#define CMD_SensorKorrWert_TI           1112
+
+
+
+
+&#0050100005      Weekday: 5=Sa
+&#0050200009      Day 
+&#0050300002      Month
+&#0050402008      Year
+
+&#0050500009      Hour 
+&#0050600050      Minute
+&#0050700030      Second

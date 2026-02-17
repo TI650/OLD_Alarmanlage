@@ -1,0 +1,78 @@
+//***********************************************************************************
+// Installationsscript für AC-Control
+//***********************************************************************************
+//
+// Projekt: Manfred Kraus
+// Objekt : Am Weinberg 2
+//          24223 Schwentinental
+//
+// Datum:   23.06.2008         
+//
+//***********************************************************************************
+//  #define CMD_AC_CountdownTime             101
+//  #define CMD_AC_Buzz1_Cnt_Time            102
+//  #define CMD_AC_Int_Siren_Cnt_Time        103
+//
+//  #define CMD_AC_InPortAdr_Min             200
+//  #define CMD_AC_InPortAdr_Max             207
+//  #define CMD_AC_InPortCnt                 210
+//  #define CMD_AC_SlaveAddress              220
+//
+//  #define CMD_AC_InPortRootingTable_Min    300
+//  #define CMD_AC_InPortRootingTable_Max    363
+//
+//  #define CMD_RTC_SetWeekDay               501
+//  #define CMD_RTC_SetDay                   502
+//  #define CMD_RTC_SetMonth                 503
+//  #define CMD_RTC_SetYear                  504
+//  #define CMD_RTC_SetHour                  505
+//  #define CMD_RTC_SetMinute                506
+//  #define CMD_RTC_SetSecond                507
+//
+//  #define CMD_PreAlarm_BuzzerLevelMin      611
+//  #define CMD_PreAlarm_BuzzerLevelMax      612
+//  #define CMD_PreAlarm_BuzzerIntervall     613
+//
+//  #define CMD_FullAlarm_BuzzerLevelMin     621
+//  #define CMD_FullAlarm_BuzzerLevelMax     622
+//  #define CMD_FullAlarm_BuzzerIntervall    623
+//
+//  #define CMD_SensorKorrWert_Min          1110
+//  #define CMD_SensorKorrWert_Max          1113
+//
+//######################################################
+// PORTZUORDNUNGEN
+// Cmd        // Name              //  An Port.Pin  //  To Port.Pin  //  Mem.No  //
+// Port 0
+&#0030000003  // K Haustür         //     0A.3      //     0.0       //   00     //
+&#0030100023  // K PSK-Küche       //     1B.7      //     0.1       //   01     //16+7
+&#0030200255  // K Kellertür       //     x.x       //     0.2       //   02     //
+// Port 1
+&#0030800002  // S Haustür         //     0A.2      //     1.0       //   08     //
+&#0030900022  // S PSK-Küche       //     1B.6      //     1.1       //   09     //16+6
+&#0031000255  // S Kellertür       //     x.x       //     1.2       //   10     //
+// Port 2
+&#0031600001  // K Windfang II     //     0A.1      //     2.0       //   16     //
+&#0031700000  // K Windfang III    //     0A.0      //     2.1       //   17     //
+&#0031800007  // K Wohnzimmer I    //     0B.7      //     2.2       //   18     //
+&#0031900005  // K Wohnzimmer II   //     0B.5      //     2.3       //   19     //
+&#0032000019  // K Esszimmer I     //     1A.3      //     2.4       //   20     //16+3
+&#0032100017  // K Esszimmer II    //     1A.1      //     2.5       //   21     //16+1
+&#0032200021  // K Bad             //     1B.5      //     2.6       //   22     //16+5
+// Port 3
+&#0032400002  // S Windfang II     //     0A.2      //     3.0       //   24     //
+&#0032500002  // S Windfang III    //     0A.2      //     3.1       //   25     //
+&#0032600006  // S Wohnzimmer I    //     0B.6      //     3.2       //   26     //
+&#0032700004  // S Wohnzimmer II   //     0B.4      //     3.3       //   27     //
+&#0032800018  // S Esszimmer I     //     1A.2      //     3.4       //   28     //16+2
+&#0032900016  // S Esszimmer II    //     1A.0      //     3.5       //   29     //16+0
+&#0033000020  // S Bad             //     1B.4      //     3.6       //   30     //16+4
+//
+//######################################################
+// ZEITEN
+&#0010100045  //  CMD_AC_CountdownTime            
+//&#0010100008  //  CMD_AC_CountdownTime            
+&#0010200000  //  CMD_AC_Buzz1_Cnt_Time           
+&#0010300120  //  CMD_AC_Int_Siren_Cnt_Time       
+//
+//######################################################
